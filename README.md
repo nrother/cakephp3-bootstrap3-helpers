@@ -36,7 +36,8 @@ Plugin::load('Bootstrap3', ['autoload' => true]);
 How to use?
 ===========
 
-Just add Helper files into your View/Helpers directory and load the helpers in you controller:
+Just add these code to your `AppController.php` to use the helpers contained in this plugin
+instead of Cake's ones:
 ```php
 public $helpers = [
     'Html' => [
@@ -53,6 +54,13 @@ public $helpers = [
     ]
 ];
 ```
+Then edit you `AppView.php` and add
+```php
+public $theme = 'Bootstrap3';
+```
+When you're baking views just add the option `--theme=Bootstrap3` and
+your baked views will look great automagically!
+
 
 I tried to keep CakePHP helpers style. You can find the documentation directly in the Helpers files.
 
