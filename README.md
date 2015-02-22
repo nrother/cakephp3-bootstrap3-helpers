@@ -39,6 +39,8 @@ How to use?
 Just add these code to your `AppController.php` to use the helpers contained in this plugin
 instead of Cake's ones:
 ```php
+public $theme = 'Bootstrap3';
+
 public $helpers = [
     'Html' => [
         'className' => 'Bootstrap3.BootstrapHtml'
@@ -53,10 +55,6 @@ public $helpers = [
         'className' => 'Bootstrap3.BootstrapModal'
     ]
 ];
-```
-Then edit you `AppView.php` and add
-```php
-public $theme = 'Bootstrap3';
 ```
 When you're baking views just add the option `--theme=Bootstrap3` and
 your baked views will look great automagically!
